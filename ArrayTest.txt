@@ -1,0 +1,101 @@
+--[[
+
+class Animal
+	var name;
+	var age;
+
+	init: name, age ->
+		self.name = name;
+		self.age = age;
+	end
+
+	func Name
+		ret self.name;
+	end
+
+	func Age
+		ret self.age;
+	end
+
+	func MakeSound;
+end
+
+class Tiger : Animal
+	init: name, age ->
+		base(name, age);
+	end
+
+	func MakeSound: ->
+		Console.Writeln("My name is " + Name + ", I am " + Age + " years old. Rawr!");
+	end
+end
+
+func RandomName: ->
+	var nameParts = [
+		"Adam", "Bitter", "Charles", "Depot", "Evans", "Feline",
+		"Gustav", "Helena", "Ivan", "Justine", "Kopper", "Levin",
+		"Marvin", "Nicole"
+	];
+
+	var i = Random.Generate(0, nameParts.Length);
+
+	return nameParts[i];
+end
+
+var tiger = Array(10);
+for var i = 0 to 10 do
+	tiger[i] = Tiger(RandomName() + RandomName(), 2 + i * 2);
+	var t = tiger[i]; -- Reference-Copy
+
+	if t.Age % 2 == 0 then
+		t.MakeSound();
+	end
+
+	tiger.MakeSound();
+end
+
+]]--
+
+println("--- Array Test ---")
+
+
+var arr1 = array(5)
+arr1(0) = 10
+arr1(1) = 20
+arr1(2) = 30
+arr1(3) = 40
+arr1(4) = 50
+
+var print_array = func print_array: arr {
+	var temp = len(arr)
+	temp = temp - 1
+	print_array_help(arr, temp)
+}
+
+var print_array_help = func print_array: arr, n {
+	if n = 0 then {
+		println("arr(", n, ")", arr(n))
+		var index = len(arr)
+		index = index - 1
+		arr(index) = "Last Element got changed"
+		1
+	}
+	else {
+		println("arr(", n, ")", arr(n))
+		print_array(arr, n - 1)
+	}
+}
+
+println("Whole Array: ", arr1)
+
+print_array(arr1)
+println("Letztes Element veraendert?", arr1(4))
+print_array(arr1)
+
+println("--- Array Test Complete ---")
+println("--- String Test ---")
+
+var str = "Hallo Welt!"
+println("String: ", str, ", length: ", len(str))
+
+println("--- String Test Complete ---")

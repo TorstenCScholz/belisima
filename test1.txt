@@ -1,0 +1,32 @@
+-- Calculates the faculty of n
+func fac: n {
+	if n < 2 then
+		ret 1
+	end
+
+	ret n * fac(n - 1)
+}
+
+if a = b {
+	pi = 3.1415
+	quarter = 1/4
+	println("A quarter of Pi is " + quarter * pi + ".")
+	-- this is a comment
+	echo "php sucks"
+	--[[ this is another
+	comment ]]
+	echo "php still sucks"
+}
+
+--[[
+EBNF:
+	Progr ::= <Seq>
+	Block ::= '{' <Seq> '}'
+	Atom  ::= NUMBER | STRING | IDENTIFIER | VOID
+	Any   ::= <Expr> | <Block> | <Decl> | <ProcCall>
+	ProcCall ::= IDENTIFIER '(' <List> ')
+	List  ::= EMPTY | <Expr> { ',' <Expr> }
+	Decl  ::= var IDENTIFIER [ '=' <Expr> ]
+	Seq   ::= <Any> SEPARATOR <Seq> | <Any>
+	Expr  ::= IDENTIFIER '(' <Expr> ')' | <Atom>
+]]

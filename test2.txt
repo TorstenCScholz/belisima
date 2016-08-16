@@ -1,0 +1,103 @@
+--[[31415
+8/64
+{ { }
+	"Hallo"
+}
+
+var a
+var b = 1000/499
+b
+
+println("Hallo Welt :)")
+println("Wie geht es dir?")
+println("Dies ist ein Test fuer", 3, "Personen!")
+
+println(b)
+println("Wert von b:", b)
+
+println("c defined?", defined(c))
+println("b defined?", defined(b))
+
+defined(c)
+
+var c
+
+println("c now defined?", defined(c))
+println("defined defined?", defined(defined))
+println(defined)
+
+println("Type of", b, "is", type(b))
+println("Type of", type, "is", type(type))]]
+
+println(1)
+
+var a = 1
+var b = 2
+b = b - 1/2
+
+var fac = func fac: n {
+	if n = 0 then {
+		1
+	}
+	else {
+		n * fac(n - 1)
+	}
+}
+
+var fac2 = fac
+
+println("fac(5) call:")
+println(" ", fac2(5))
+
+if ((0 - 1) + 2) * 3/2 = b then {
+	var c = "c"
+	
+	println("c set (in if)?", defined(c))
+	println("((0 - 1) + 2) * 3/2 ist gleich b!")
+	if b = 3/2 then {
+		println(b, "is b")
+	}
+
+	println("Test 1 2 3")
+}
+else {
+	println("Ausdruck ist nicht gleich :(")
+}
+
+if defined(c) then {
+	println("c set")
+}
+else {
+	println("c not set")
+}
+
+println("if " + (b + " done"))
+
+println("### Array test ###")
+
+var arr1 = array(5)
+arr1(0) = 10
+arr1(1) = 20
+arr1(2) = 30
+arr1(3) = 40
+arr1(4) = array(2)
+arr1(4, 0) = "Hallo"
+arr1(4, 1) = "Welt"
+
+println(arr1(4, 0), arr1(4, 1))
+
+var print_array = func print_array: arr, n {
+	if n = 0 then {
+		println("arr(", n, ")", arr(n))
+		arr(4) = "TEST"
+	}
+	else {
+		println("arr(", n, ")", arr(n))
+		print_array(arr, n - 1)
+	}
+}
+
+print_array(arr1, 4)
+print_array(arr1(4), 1)
+
+println("Type of arr1:", type(arr1))

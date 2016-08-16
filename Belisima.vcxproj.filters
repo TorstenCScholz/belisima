@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien\expr">
+      <UniqueIdentifier>{86a67c87-44ee-4e0a-bcd7-67ffd9413a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\expr">
+      <UniqueIdentifier>{a7b468ba-efa7-4876-af52-39894114525c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Environment.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Frame.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Token.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Lexer.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="LexerException.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="ParserException.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="InterpreterException.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Void.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Symbol.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="String.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Sequence.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Number.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Expression.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Declaration.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcCall.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Function.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Boolean.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Addition.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Subtraction.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Multiplication.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Division.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="IfStatement.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Comparison.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Array.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+    <ClCompile Include="Reference.cpp">
+      <Filter>Quelldateien\expr</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Environment.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="NonCopyable.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Lexer.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Token.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="LexerException.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="ParserException.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="BacktrackingGuard.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="GuardedPosition.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="InterpreterException.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Void.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Symbol.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Sequence.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Panic.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Number.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Declaration.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Expression.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Assignment.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcCall.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Procedure.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Boolean.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Addition.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Subtraction.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Multiplication.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Division.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="IfStatement.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Comparison.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Array.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+    <ClInclude Include="Reference.h">
+      <Filter>Headerdateien\expr</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test1.txt">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="test2.txt">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="ArrayTest.txt">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+  </ItemGroup>
+</Project>
